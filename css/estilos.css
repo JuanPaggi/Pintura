@@ -1,309 +1,320 @@
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px;
-  background-color: #1672b3;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-ol,ul{
+li, a{
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-h1{
-  margin: 0;
-  padding: 0;
-}
-
-figure{
-  margin: 0;
-}
-
-h3{
-  color:black;
-}
-
-/* -----HEADER----- */
-
-.header{
-  padding: 10px;
-  background-color: #9a0c89;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  align-items: center;
-  flex-wrap: wrap;
-  border-radius: 2em;
-}
-
-.nav{
-  height: inherit;
-  display: flex;
-}
-
-.header ol{
-  display: flex;
-  height: inherit;
-}
-
-.header ol li{
-  height: inherit;
-}
-
-.header a{
-  color:white;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: inherit;
-  padding: 0 10px;
+  color: black;
 }
 
-.logo{
-  justify-content: flex-start;
-}
-
-/* -----HEADER----- end */
-
-/* -----HERO----- */
-
-.hero{
-  background-color: #1672b3;
-  height: 250px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.hero h1{
-  font-size: 3em;
-  color: white;
-  margin-left: 1em;
-}
-
-/* -----HERO----- end */
-
-/* -----CURSOS----- */
-
-.cursos{
-  background-color: #ffefea;
-  padding: 20px;
-  margin-top: 0;
+.fondo{
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.cursos-title h2{
-  color: black;
-  text-align: center;
-  font-size: 2em;
-  background-color: #ffefea;
-  margin-bottom: -20px;
-  margin-top: 10px;
-  padding-top: 20px;
-  border-top-right-radius: 1em;
-  border-top-left-radius: 1em;
+.container{
+  margin: 0;
+  width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  grid-template-areas: "header "
+                       "hero "
+                       "cursos "
+                       "eventos "
+                       "galeria"
+                       "contacto"
+                       "footer ";
 }
 
-.cursos-proyect{
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 15px;
-  background: #BA1477;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  flex-wrap: wrap;
-  height: 200px;
-  width: 200px;
+.item{
+  background: lightblue;
+  padding: 2px;
+  border: 1px solid red;
 }
 
-.cursos button{
-  background: transparent;
-  color: black;
-  padding: 10px 0;
-  border-radius: 10px;
-  width: 100px;
-  margin-top: 1em;
-  background-color: #e82771;
+.header{
+  grid-area: header;
+  height: 100px;
+  width: 1024;
 }
 
-.curso-date{
-  display: block;
-  text-align: center;
-  margin: 10px;
-}
-
-.image-cursos{
-  width: 250px;
+.hero{
+  grid-area: hero;
   height: 250px;
-  object-fit: cover;
 }
 
-.cursos p{
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
-  /* border: 1px solid black; */
-  font-size: .9em;
-}
-
-/* -----CURSOS----- end */
-
-/* -----EVENTOS----- */
-
-.event-title h2{
-  color: black;
-  text-align: center;
-  font-size: 2em;
-  background-color: #ffefea;
-  margin-bottom: -20px;
-  margin-top: 10px;
-  padding-top: 20px;
+.cursos{
+grid-area: cursos;
+height: 300px;
+padding: 30px;
 }
 
 .eventos{
-  background-color: #ffefea;
+grid-area: eventos;
+height: 300px;
+padding: 30px;
+}
+
+.galeria{
+  display: grid;
+  grid-area: galeria;
+  height: 600px;
+  padding: 30px;
+  grid-template-rows: 10% 45% 45%;
+  grid-template-areas: "contacto-container0"
+                       "contacto-container1"
+                       "contacto-container2";
+}
+
+.contacto{
+  grid-area: contacto;
+  height: 300px;
   padding: 20px;
-  margin-top: 10px;
+}
+
+.footer{
+grid-area: footer;
+height: 50px;
+padding: 5px;
+}
+
+/* ----- HEADER ----- */
+
+.header-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2px;
+  height: inherit;
+  grid-template-areas: "logo redes"
+                       "logo menu";
+}
+
+.logo{
+  grid-area: logo;
+}
+
+.redes{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: redes;
+}
+
+.menu{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  grid-area: menu;
 }
 
-.evento-date{
-  display: block;
-  text-align: center;
-  margin: 10px;
-}
 
-.event-proyect{
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 15px;
-  background: #ffefea;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  flex-wrap: wrap;
-  height: 200px;
-  width: 300px;
-}
+/* ----- HERO ----- */
 
-.image-event{
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.eventos p{
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
-  /* border: 1px solid black; */
-  font-size: .9em;
-}
-
-/* -----EVENTOS----- end */
-
-/* -----ESTUDIANTES----- */
-
-.contact-title h2{
-  color: black;
-  text-align: center;
-  font-size: 2em;
-  background-color: #ffefea;
-  margin-bottom: -20px;
-  margin-top: 10px;
-  padding-top: 20px;
-}
-
-.contact{
-  background-color: #ffefea;
-  padding: 10px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-date{
-  display: block;
-  margin: 10px;
-}
-
-.contact-info{
-  margin: 15px;
-  background: #ffefea;
-  overflow: hidden;
-  flex-wrap: wrap;
-  height: auto;
-  max-width: auto;
-  padding: 10px;
-  font-size: 1.2em;
-}
-
-.contact input{
-  margin: .5em;
-  padding: .3em;
-  border-radius: 5px;
-}
-
-.contact textarea{
-  border-radius: 5px;
-    box-shadow: inset 0 -.1em rgba(0,0,0, .2);
-  height: 200px;
-  margin: .5em;
-  padding: .3em;
-  width: 400px;
-  font-family: arial;
-}
-
-.btn-contact{
-  background: #e82771;
-  width: 100px;
-  height: 3em;
-}
-
-/* -----ESTUDIANTES----- end */
-
-/* -----FOOTER----- */
-
-.footer{
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 70px;
-  background-color: #ffefea;
-  margin-top: 10px;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer a{
-  color:black;
-}
-
-/* -----FOOTER----- end */
-
-.container{
-  max-width: 1000px;
-  flex: 1;
-  /* width: 100%; */
-  margin: 0 auto;
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
+.hero-container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 2px;
   height: inherit;
-  flex-wrap: inherit
+  grid-template-areas: "hero-date";
+}
+
+.hero-date{
+  grid-area: hero-date;
+}
+
+/* ----- CURSOS ----- */
+
+.cursos-container{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 15% 85%;
+  grid-gap: 2px;
+  height: inherit;
+  grid-template-areas:  "curso-titulo curso-titulo curso-titulo curso-titulo"
+                        "curso1 curso2 curso3 curso4";
+}
+
+.curso-titulo{
+  grid-area: curso-titulo;
+}
+
+.curso1{
+  grid-area: curso1;
+}
+
+.curso2{
+  grid-area: curso2;
+}
+
+.curso3{
+  grid-area: curso3;
+}
+
+.curso4{
+  grid-area: curso4;
+}
+
+/* ----- EVENTOS ----- */
+
+.eventos-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 85%;
+  grid-gap: 2px;
+  height: inherit;
+  grid-template-areas:  "evento-titulo evento-titulo"
+                        "evento1 evento2";
+}
+
+.evento-titulo{
+  grid-area: evento-titulo;
+}
+
+.evento1{
+  grid-area: evento1;
+}
+
+.evento2{
+  grid-area: evento2;
+}
+
+/* ----- GALERIA ----- */
+
+.galeria-container0{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 5px;
+  height: auto;
+  grid-template-areas:"galeria-title";
+  grid-area: contacto-container0;
+}
+
+.galeria-container1{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 5px;
+  margin: 2px;
+  height: auto;
+  grid-template-areas:"galeria1 galeria2 galeria3";
+  grid-area: contacto-container1;
+}
+
+.galeria-container2{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 5px;
+  height: auto;
+  margin: 2px;
+  grid-template-areas:"galeria4 galeria5 galeria6";
+  grid-area: contacto-container2;
+}
+
+.galeria-title{
+  grid-area: galeria-title;
+}
+
+.galeria1{
+  grid-area: galeria1;
+}
+
+.galeria2{
+  grid-area: galeria2;
+}
+
+.galeria3{
+  grid-area: galeria3;
+}
+
+.galeria4{
+  grid-area: galeria4;
+}
+
+.galeria5{
+  grid-area: galeria5;
+}
+
+.galeria6{
+  grid-area: galeria6;
+}
+
+/* ----- CONTACTO ----- */
+
+.contacto-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 85%;
+  grid-gap: 2px;
+  height: inherit;
+  grid-template-areas: "contacto-titulo contacto-titulo"
+                        "contacto1 contacto2";
+}
+
+.contacto-titulo{
+  grid-area: contacto-titulo;
+}
+
+.contacto1{
+  grid-area: contacto1;
+}
+
+.contacto2{
+  grid-area: contacto2;
+}
+
+/* ----- MENU ----- */
+
+.menu-container{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 2px;
+  height: inherit;
+  grid-template-areas: "menu1 menu2 menu3 menu4 menu5";
+}
+
+.menu1{
+  grid-area: menu1;
+}
+
+.menu2{
+  grid-area: menu2;
+}
+
+.menu3{
+  grid-area: menu3;
+}
+
+.menu4{
+  grid-area: menu4;
+}
+
+.menu5{
+  grid-area: menu5;
+}
+
+/* ----- REDES ----- */
+
+.redes-container{
+  display: grid;
+  grid-template-columns: 20px 20px;
+  grid-gap: 2px;
+  height: inherit;
+  grid-template-areas: "redes1 redes2";
+}
+
+.redes1{
+  grid-area: redes1;
+  margin: 5px;
+}
+
+.redes2{
+  grid-area: redes2;
+  margin: 5px;
 }
