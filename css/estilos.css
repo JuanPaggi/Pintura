@@ -43,17 +43,18 @@ li, a{
 
 .header{
   grid-area: header;
-  height: 100px;
+  height: auto;
   width: 1024;
   background-color: #7d1257;
   border-radius: 20px;
+  padding: .7em;
 }
 
 .hero{
   grid-area: hero;
   padding: 0;
   margin: 0;
-  height: 250px;
+  height: auto;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -90,9 +91,19 @@ padding: 30px;
 }
 
 .footer{
+display: flex;
 grid-area: footer;
 height: 50px;
 padding: 5px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+background-color: #7d1257;
+text-align: center;
+justify-content: space-between;
+align-items: center;
+padding-right: 1em;
+padding-left: 1em;
+color: #ffdece;
 }
 
 /* ----- HEADER ----- */
@@ -370,6 +381,10 @@ padding: 5px;
     font-family: 'Allura', cursive;
     font-size: 2.5em;
     color: #6d3920;
+}
+
+.footer a{
+  color: #ffdece;
 }
 
 
