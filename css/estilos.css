@@ -1,0 +1,309 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  background-color: #1672b3;
+}
+
+ol,ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+figure{
+  margin: 0;
+}
+
+h3{
+  color:black;
+}
+
+/* -----HEADER----- */
+
+.header{
+  padding: 10px;
+  background-color: #9a0c89;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 2em;
+}
+
+.nav{
+  height: inherit;
+  display: flex;
+}
+
+.header ol{
+  display: flex;
+  height: inherit;
+}
+
+.header ol li{
+  height: inherit;
+}
+
+.header a{
+  color:white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+.logo{
+  justify-content: flex-start;
+}
+
+/* -----HEADER----- end */
+
+/* -----HERO----- */
+
+.hero{
+  background-color: #1672b3;
+  height: 250px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.hero h1{
+  font-size: 3em;
+  color: white;
+  margin-left: 1em;
+}
+
+/* -----HERO----- end */
+
+/* -----CURSOS----- */
+
+.cursos{
+  background-color: #ffefea;
+  padding: 20px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursos-title h2{
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  background-color: #ffefea;
+  margin-bottom: -20px;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.cursos-proyect{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px;
+  background: #BA1477;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 200px;
+}
+
+.cursos button{
+  background: transparent;
+  color: black;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: 100px;
+  margin-top: 1em;
+  background-color: #e82771;
+}
+
+.curso-date{
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+
+.image-cursos{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cursos p{
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  font-size: .9em;
+}
+
+/* -----CURSOS----- end */
+
+/* -----EVENTOS----- */
+
+.event-title h2{
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  background-color: #ffefea;
+  margin-bottom: -20px;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+.eventos{
+  background-color: #ffefea;
+  padding: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.evento-date{
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+
+.event-proyect{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px;
+  background: #ffefea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: wrap;
+  height: 200px;
+  width: 300px;
+}
+
+.image-event{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.eventos p{
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  font-size: .9em;
+}
+
+/* -----EVENTOS----- end */
+
+/* -----ESTUDIANTES----- */
+
+.contact-title h2{
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  background-color: #ffefea;
+  margin-bottom: -20px;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+.contact{
+  background-color: #ffefea;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-date{
+  display: block;
+  margin: 10px;
+}
+
+.contact-info{
+  margin: 15px;
+  background: #ffefea;
+  overflow: hidden;
+  flex-wrap: wrap;
+  height: auto;
+  max-width: auto;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.contact input{
+  margin: .5em;
+  padding: .3em;
+  border-radius: 5px;
+}
+
+.contact textarea{
+  border-radius: 5px;
+    box-shadow: inset 0 -.1em rgba(0,0,0, .2);
+  height: 200px;
+  margin: .5em;
+  padding: .3em;
+  width: 400px;
+  font-family: arial;
+}
+
+.btn-contact{
+  background: #e82771;
+  width: 100px;
+  height: 3em;
+}
+
+/* -----ESTUDIANTES----- end */
+
+/* -----FOOTER----- */
+
+.footer{
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70px;
+  background-color: #ffefea;
+  margin-top: 10px;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer a{
+  color:black;
+}
+
+/* -----FOOTER----- end */
+
+.container{
+  max-width: 1000px;
+  flex: 1;
+  /* width: 100%; */
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit
+}
