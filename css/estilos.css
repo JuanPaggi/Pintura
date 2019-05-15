@@ -44,6 +44,8 @@ li, a{
   grid-area: header;
   height: 100px;
   width: 1024;
+  background-color: #7d1257;
+  border-radius: 20px;
 }
 
 .hero{
@@ -90,11 +92,12 @@ padding: 5px;
 
 .header-container{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 49% 49%;
   grid-gap: 2px;
   height: inherit;
   grid-template-areas: "logo redes"
                        "logo menu";
+  border-radius: 20px;
 }
 
 .logo{
@@ -102,6 +105,8 @@ padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #7d1257;
+  border-radius: 20px;
 }
 
 .redes{
@@ -109,6 +114,8 @@ padding: 5px;
   justify-content: flex-end;
   align-items: center;
   grid-area: redes;
+  background-color: #7d1257;
+  border-radius: 20px;
 }
 
 .menu{
@@ -116,6 +123,8 @@ padding: 5px;
   justify-content: space-around;
   align-items: center;
   grid-area: menu;
+  background-color: #7d1257;
+  border-radius: 20px;
 }
 
 
@@ -330,4 +339,5 @@ padding: 5px;
   font-size: 4em;
   text-align: center;
   font-family: 'Allura', cursive;
+  color: #ffdece;
 }
