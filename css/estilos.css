@@ -352,6 +352,7 @@ padding: 5px;
 	left: 50%;
 	top: 50%;
 	width: 25px;
+  box-shadow: inset -.1em -.1em rgba(255,255,255, .1);
 }
 
 .app-face:after {
