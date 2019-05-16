@@ -217,45 +217,38 @@ color: #ffdece;
 
 /* ----- GALERIA ----- */
 
-.galeria-container0{
+.galeria-container{
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 5px;
-  height: auto;
-  grid-template-areas:"galeria-title";
-  grid-area: contacto-container0;
+  grid-template-rows: 10% 90%;
+  height: inherit;
+  grid-template-areas:"galeria-title"
+                      "galeria-cuadros";
 }
 
-.galeria-container1{
+.galeria-cuadros{
+  grid-area: galeria-cuadros;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-gap: 5px;
+  grid-template-rows: 50% 50%;
+  grid-gap: 10px;
   margin: 2px;
-  height: auto;
-  grid-template-areas:"galeria1 galeria2 galeria3";
-  grid-area: contacto-container1;
+  grid-template-areas:"galeria1 galeria2 galeria3"
+                      "galeria4 galeria5 galeria6";
 }
 
-.galeria-container2{
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-gap: 5px;
-  height: auto;
-  margin: 2px;
-  grid-template-areas:"galeria4 galeria5 galeria6";
-  grid-area: contacto-container2;
-}
-
-.galeria-title{
+.galeria-titulo{
   grid-area: galeria-title;
 }
 
 .galeria1{
   grid-area: galeria1;
+  overflow: hidden;
 }
 
 .galeria2{
   grid-area: galeria2;
+  overflow: hidden;
 }
 
 .galeria3{
@@ -272,6 +265,11 @@ color: #ffdece;
 
 .galeria6{
   grid-area: galeria6;
+}
+
+.galeria-cuadros img{
+  width: 100%;
+  object-fit: cover;
 }
 
 /* ----- CONTACTO ----- */
@@ -385,6 +383,7 @@ color: #ffdece;
 
 .footer a{
   color: #ffdece;
+  text-decoration: underline;
 }
 
 
