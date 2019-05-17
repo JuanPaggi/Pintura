@@ -29,9 +29,9 @@ h3{
   width: 1024px;
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 10px;
-  grid-template-areas: "header "
+  grid-template-areas: "header"
                        "hero "
+                       "main "
                        "cursos "
                        "eventos "
                        "galeria"
@@ -50,19 +50,26 @@ h3{
   height: auto;
   width: 1024;
   background-color: #7d1257;
-  border-radius: 20px;
   padding: .7em;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .hero{
   grid-area: hero;
   padding: 0;
   margin: 0;
-  height: auto;
   position: relative;
   display: inline-block;
   text-align: center;
-  border-radius: 5px;
+  height: 250px;
+}
+
+.main{
+  grid-area: main;
+  height: 300px;
+  padding: 20px;
+  background: #7d1257;
 }
 
 .cursos{
@@ -80,7 +87,7 @@ padding: 30px;
 .galeria{
   display: grid;
   grid-area: galeria;
-  height: 1000px;
+  height: 800px;
   padding: 30px;
   grid-template-rows: 10% 90%;
   grid-template-areas: "galeria-titulo"
@@ -154,13 +161,64 @@ color: #ffdece;
 .hero-container{
   display: grid;
   grid-template-columns: 100%;
-  height: inherit;
   grid-template-areas: "hero-date";
 }
 
 .hero-date{
   grid-area: hero-date;
 }
+
+/* ----- MAIN ----- */
+
+.main-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 60%;
+  height: inherit;
+  grid-template-areas:  "main-titulo main-img"
+                        "main-descripcion main-img";
+}
+
+.main-container h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-container p{
+  font-size: 1em;
+  margin: 10px;
+  font-family: arial;
+  color: white;
+}
+
+.main-container img{
+  height: 100%;
+  width: 100%;
+}
+
+.main-titulo{
+  grid-area: main-titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-descripcion{
+  grid-area: main-descripcion;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-img{
+  grid-area: main-img;
+  overflow: hidden;
+}
+
 
 /* ----- CURSOS ----- */
 
@@ -436,7 +494,6 @@ color: #ffdece;
 .hero-image{
   width: 100%;
   height: 250px;
-  border-radius: 5px;
 }
 
 .centrado{
@@ -445,8 +502,12 @@ color: #ffdece;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Allura', cursive;
-    font-size: 2.5em;
+    font-size: 3em;
     color: #6d3920;
+}
+
+.centrado h2{
+  margin: 0;
 }
 
 .footer a{
