@@ -14,6 +14,10 @@ li, a{
   color: black;
 }
 
+h3{
+  font-size: 1.3em;
+}
+
 .fondo{
   width: 100%;
   display: flex;
@@ -163,7 +167,7 @@ color: #ffdece;
 .cursos-container{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 18% 82%;
   grid-gap: 2px;
   height: inherit;
   grid-template-areas:  "curso-titulo curso-titulo curso-titulo curso-titulo"
@@ -172,6 +176,10 @@ color: #ffdece;
 
 .curso-titulo{
   grid-area: curso-titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
 }
 
 .curso1{
@@ -195,7 +203,7 @@ color: #ffdece;
 .eventos-container{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 18% 82%;
   grid-gap: 2px;
   height: inherit;
   grid-template-areas:  "evento-titulo evento-titulo"
@@ -204,6 +212,10 @@ color: #ffdece;
 
 .evento-titulo{
   grid-area: evento-titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
 }
 
 .evento1{
@@ -219,7 +231,7 @@ color: #ffdece;
 .galeria-container{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 8% 92%;
+  grid-template-rows: 10% 90%;
   height: inherit;
   grid-template-areas:"galeria-title"
                       "galeria-cuadros";
@@ -231,7 +243,7 @@ color: #ffdece;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: 48% 48%;
   justify-content: center;
-  grid-gap: 20px;
+  grid-gap: 30px;
   margin: 2px;
   grid-template-areas:"galeria1 galeria2 galeria3"
                       "galeria4 galeria5 galeria6";
@@ -248,32 +260,50 @@ color: #ffdece;
 .galeria1{
   grid-area: galeria1;
   overflow: hidden;
+  border: 3px solid rgba(99,60,31, .8);
+  border-radius: 5px;
+  background: #efe3c7;
 }
 
 .galeria2{
   grid-area: galeria2;
   overflow: hidden;
+  border: 3px solid rgba(99,60,31, .8);
+  border-radius: 5px;
+    background: #efe3c7;
 }
 
 .galeria3{
   grid-area: galeria3;
+  border: 3px solid rgba(99,60,31, .8);
+  border-radius: 5px;
+    background: #efe3c7;
 }
 
 .galeria4{
   grid-area: galeria4;
+  border: 3px solid rgba(99,60,31, .8);
+  border-radius: 5px;
+    background: #efe3c7;
 }
 
 .galeria5{
   grid-area: galeria5;
+  border: 3px solid rgba(99,60,31, .8);
+  border-radius: 5px;
+    background: #efe3c7;
 }
 
 .galeria6{
   grid-area: galeria6;
+  border: 3px solid rgba(99,60,31, .8);
+  border-radius: 5px;
+    background: #efe3c7;
 }
 
 .galeria-cuadros img{
   width: 80%;
-  height: 80%;
+  height: 90%;
 }
 
 .galeria-img{
