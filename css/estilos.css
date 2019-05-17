@@ -76,12 +76,11 @@ padding: 30px;
 .galeria{
   display: grid;
   grid-area: galeria;
-  height: 600px;
+  height: 1000px;
   padding: 30px;
-  grid-template-rows: 10% 45% 45%;
-  grid-template-areas: "contacto-container0"
-                       "contacto-container1"
-                       "contacto-container2";
+  grid-template-rows: 10% 90%;
+  grid-template-areas: "galeria-titulo"
+                       "galeria-container";
 }
 
 .contacto{
@@ -220,7 +219,7 @@ color: #ffdece;
 .galeria-container{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 8% 92%;
   height: inherit;
   grid-template-areas:"galeria-title"
                       "galeria-cuadros";
@@ -229,9 +228,10 @@ color: #ffdece;
 .galeria-cuadros{
   grid-area: galeria-cuadros;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 50% 50%;
-  grid-gap: 10px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 48% 48%;
+  justify-content: center;
+  grid-gap: 20px;
   margin: 2px;
   grid-template-areas:"galeria1 galeria2 galeria3"
                       "galeria4 galeria5 galeria6";
@@ -239,6 +239,10 @@ color: #ffdece;
 
 .galeria-titulo{
   grid-area: galeria-title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
 }
 
 .galeria1{
@@ -268,8 +272,42 @@ color: #ffdece;
 }
 
 .galeria-cuadros img{
-  width: 100%;
-  object-fit: cover;
+  width: 80%;
+  height: 80%;
+}
+
+.galeria-img{
+    grid-area: galeria-img;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria-sub{
+    grid-area: galeria-sub;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria-button{
+    grid-area: galeria-description;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria-button button{
+  height: 2em;
+  width: 6em;
+  box-shadow: inset -1px -1px rgba(0,0,0, .4);
+  border: none;
+  border-radius: 5px;
+  background: #7d1257;
+  color: white;
 }
 
 /* ----- CONTACTO ----- */
