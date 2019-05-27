@@ -195,7 +195,7 @@ h3{
 .main-container p{
   font-size: 1.3em;
   margin: 10px;
-  font-family: arial;
+  font-family: cursive;
 }
 
 .main-container img{
@@ -290,8 +290,8 @@ h3{
 
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 43% 43% 10%;
-  font-size: 1.5em;
+  grid-template-rows: 42% 42% 10%;
+  font-size: 1.4em;
   grid-gap: 10px;
   grid-template-areas:  "clases-img1 clases-img2 clases-img3"
                         "clases-img4 clases-img5 clases-img6"
