@@ -85,7 +85,7 @@ h3{
 
 .eventos{
   grid-area: eventos;
-  height: 500px;
+  height: 600px;
   padding: 20px;
 }
 
@@ -244,6 +244,7 @@ h3{
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+  color: #331f0a;
 }
 
 .curso1{
@@ -278,6 +279,7 @@ h3{
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+  color: #331f0a;
 }
 
 .clases-img{
@@ -353,6 +355,7 @@ h3{
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+  color: #331f0a;
 }
 
 .evento1{
@@ -360,7 +363,7 @@ h3{
   height: 100%;
 
   display: grid;
-  grid-template-rows: 9% 53% 21% 8%;
+  grid-template-rows: 9% 50% 25% 8%;
   font-size: 1.5em;
   grid-gap: 5px;
   grid-template-areas:  "evento1-sub-titulo"
@@ -394,7 +397,7 @@ h3{
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.75em;
 }
 
 .evento1-link{
@@ -405,6 +408,7 @@ h3{
   text-align: center;
   text-decoration: underline;
 }
+
 
 .evento1 img{
   width: 80%;
@@ -441,6 +445,7 @@ h3{
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+  color: #331f0a;
 }
 
 .galeria1{
@@ -711,4 +716,65 @@ h3{
 	-moz-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
 	-webkit-box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.75);
 	box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.90);
+}
+
+/* ////////////////////////////////////////////////////// */
+
+/* ----- VENTA.HTML ----- */
+
+.container-venta-html{
+  margin: 0;
+  width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header"
+                       "venta"
+                       "contacto"
+                       "footer ";
+}
+
+.venta{
+  grid-area: venta;
+  height: 1200px;
+  padding: 20px;
+}
+
+.venta-container{
+  margin: 0;
+  width: 100%;
+  display: grid;
+  height: inherit;
+  grid-gap: 10px;
+  grid-template-columns: 100%;
+  grid-template-rows: 5% 20% 20% 20% 20%;
+  grid-template-areas: "venta-title"
+                       "venta1"
+                       "venta2"
+                       "venta3"
+                       "venta4";
+}
+
+.venta-title{
+  grid-area: venta-title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  color: #331f0a;
+}
+
+.venta1{
+  grid-area: venta1;
+}
+
+.venta2{
+  grid-area: venta2;
+}
+
+.venta3{
+  grid-area: venta3;
+}
+
+.venta4{
+  grid-area: venta4;
 }
