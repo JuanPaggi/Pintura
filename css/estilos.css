@@ -33,6 +33,7 @@ h3{
                        "hero "
                        "main "
                        "cursos "
+                       "clases-especiales "
                        "eventos "
                        "galeria"
                        "contacto"
@@ -57,8 +58,6 @@ h3{
 
 .hero{
   grid-area: hero;
-  padding: 0;
-  margin: 0;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -73,22 +72,28 @@ h3{
 }
 
 .cursos{
-grid-area: cursos;
-height: 300px;
-padding: 30px;
+  grid-area: cursos;
+  height: 300px;
+  padding: 20px;
+}
+
+.clases-especiales{
+  grid-area: clases-especiales;
+  height: 600px;
+  padding: 20px;
 }
 
 .eventos{
-grid-area: eventos;
-height: 300px;
-padding: 30px;
+  grid-area: eventos;
+  height: 500px;
+  padding: 20px;
 }
 
 .galeria{
   display: grid;
   grid-area: galeria;
   height: 800px;
-  padding: 30px;
+  padding: 20px;
   grid-template-rows: 10% 90%;
   grid-template-areas: "galeria-titulo"
                        "galeria-container";
@@ -96,24 +101,29 @@ padding: 30px;
 
 .contacto{
   grid-area: contacto;
-  height: 300px;
+  height: 100px;
   padding: 20px;
+  background-color: #7d1257;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
 }
 
 .footer{
-display: flex;
-grid-area: footer;
-height: 50px;
-padding: 5px;
-border-bottom-left-radius: 20px;
-border-bottom-right-radius: 20px;
-background-color: #7d1257;
-text-align: center;
-justify-content: space-between;
-align-items: center;
-padding-right: 1em;
-padding-left: 1em;
-color: #ffdece;
+  display: flex;
+  grid-area: footer;
+  font-size: 1.2em;
+  height: 50px;
+  padding: 5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #7d1257;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1em;
+  padding-left: 1em;
+  color: #ffdece;
+  border-top: 1px solid #272622;
 }
 
 /* ----- HEADER ----- */
@@ -158,12 +168,6 @@ color: #ffdece;
 
 /* ----- HERO ----- */
 
-.hero-container{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "hero-date";
-}
-
 .hero-date{
   grid-area: hero-date;
 }
@@ -177,26 +181,27 @@ color: #ffdece;
   height: inherit;
   grid-template-areas:  "main-titulo main-img"
                         "main-descripcion main-img";
+  color: #ffdece;
 }
 
 .main-container h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  font-family: 'Allura', cursive;
 }
 
 .main-container p{
-  font-size: 1em;
+  font-size: 1.3em;
   margin: 10px;
   font-family: arial;
-  color: white;
 }
 
 .main-container img{
   height: 100%;
   width: 100%;
+  border-radius: 5px;
 }
 
 .main-titulo{
@@ -212,6 +217,7 @@ color: #ffdece;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 10px;
 }
 
 .main-img{
@@ -256,16 +262,89 @@ color: #ffdece;
   grid-area: curso4;
 }
 
+/* ----- CLASES ESPECIALES ----- */
+
+.clases-especiales-container{
+  display: grid;
+  grid-template-rows: 13% 82%;
+  height: inherit;
+  grid-template-areas:  "clases-especiales-titulo"
+                        "clases-img";
+}
+
+.clases-especiales-titulo{
+  grid-area: clases-especiales-titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.clases-img{
+  grid-area: clases-img;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 100%;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 43% 43% 10%;
+  font-size: 1.5em;
+  grid-gap: 10px;
+  grid-template-areas:  "clases-img1 clases-img2 clases-img3"
+                        "clases-img4 clases-img5 clases-img6"
+                        "clases-descripcion clases-descripcion clases-descripcion";
+  border: 3px solid rgba(99,60,31, .8);
+  border-radius: 10px;
+  background: #efe3c7;
+}
+
+.clases-img1{
+  grid-area: clases-img1;
+}
+
+.clases-img2{
+  grid-area: clases-img2;
+}
+
+.clases-img3{
+  grid-area: clases-img3;
+}
+
+.clases-img4{
+  grid-area: clases-img4;
+}
+
+.clases-img5{
+  grid-area: clases-img5;
+}
+
+.clases-img6{
+  grid-area: clases-img6;
+}
+
+.clases-descripcion{
+  grid-area: clases-descripcion;
+  text-align: center;
+}
+
+.clases-especiales img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
 /* ----- EVENTOS ----- */
 
 .eventos-container{
   display: grid;
-  grid-template-columns: 50% 50%;
   grid-template-rows: 18% 82%;
   grid-gap: 2px;
   height: inherit;
-  grid-template-areas:  "evento-titulo evento-titulo"
-                        "evento1 evento2";
+  grid-template-areas:  "evento-titulo"
+                        "evento1";
 }
 
 .evento-titulo{
@@ -278,10 +357,59 @@ color: #ffdece;
 
 .evento1{
   grid-area: evento1;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 9% 53% 21% 8%;
+  font-size: 1.5em;
+  grid-gap: 5px;
+  grid-template-areas:  "evento1-sub-titulo"
+                        "evento1-img"
+                        "evento1-descripcion"
+                        "evento1-link";
+  border: 3px solid rgba(99,60,31, .8);
+  border-radius: 10px;
+  background: #efe3c7;
 }
 
-.evento2{
-  grid-area: evento2;
+.evento1-img{
+  grid-area: evento1-img;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evento1-sub-titulo{
+  grid-area: evento1-sub-titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.evento1-descripcion{
+  grid-area: evento1-descripcion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.evento1-link{
+  grid-area: evento1-link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.evento1 img{
+  width: 80%;
+  height: 90%;
+  border-radius: 5px;
 }
 
 /* ----- GALERIA ----- */
@@ -403,23 +531,42 @@ color: #ffdece;
 .contacto-container{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 20% 80%;
   grid-gap: 2px;
   height: inherit;
+  color: #ffdece;
   grid-template-areas: "contacto-titulo contacto-titulo"
                         "contacto1 contacto2";
 }
 
 .contacto-titulo{
   grid-area: contacto-titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
 }
 
 .contacto1{
   grid-area: contacto1;
+  font-size: 1.2em;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacto2{
   grid-area: contacto2;
+  font-size: 1.2em;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-container pre{
+  font-family: arial;
 }
 
 /* ----- MENU ----- */
@@ -485,10 +632,7 @@ color: #ffdece;
 
 .menu a{
     color: #ffdece;
-}
-
-.menu a{
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .hero-image{
@@ -519,14 +663,15 @@ color: #ffdece;
 /* ----- LOGO ----- */
 
 .app-face {
-	background: #4360b6;
+	background: #65126f;
 	border-radius: 9%;
 	display: block;
-	height: 25px;
+	height: 30px;
 	left: 50%;
 	top: 50%;
-	width: 25px;
+	width: 30px;
   box-shadow: inset -.1em -.1em rgba(255,255,255, .1);
+  border: 1px solid #651946;
 }
 
 .app-face:after {
@@ -534,7 +679,7 @@ color: #ffdece;
 	content: "f";
 	display: flex;
 	font-family: Facebook Letter Faces, Arial;
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: bold;
   justify-content: center;
 }
@@ -547,18 +692,19 @@ color: #ffdece;
 
 .instagram {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   border-radius: 25%;
-  color: #fff;
-  font-size: 25px;
+  color: #fff8f3;
+  font-size: 30px;
   line-height: 25px;
   vertical-align: middle;
   align-items: center;
   background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #d64cb8 0%, #b7189c 5%, #de34e0 45%,#e627a9 60%,#a235f5 90%);
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  border: 1px solid #651946;
 }
 
 .instagram:hover {
