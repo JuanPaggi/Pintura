@@ -26,6 +26,13 @@ body{
   font-size: 1.1em;
 }
 
+.borde{
+  border-top: 4px solid #a0845a78;
+  border-bottom: 4px solid #a0845a78;
+  border-radius: 30px;
+  padding: 10px;
+}
+
 
 /*----- HEADER -----*/
 
