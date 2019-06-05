@@ -89,12 +89,13 @@ body{
   border-radius: 5px;
   background: #efe3c7;
   text-align: center;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 /*----- GALERIA -----*/
 .galeria-img{
   height: 300px;
+  border-radius: 5px;
 }
 /*----- GALERIA -----*/
 
@@ -221,7 +222,7 @@ body{
 
 
   .card-text{
-    font-size: .7em;
+    font-size: .8em;
   }
 }
 
